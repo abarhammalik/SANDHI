@@ -1,0 +1,72 @@
+# ARTHROSCAN-NER Synthetic Data Pipeline Configuration
+random_seed: 42
+generator_version: "arthroscan-synth-v1.0"
+dataset_version: "arthroscan-real-synthetic-v1.0"
+
+generation:
+  default_num_patients: 5000
+  class_balance_target:
+    control: 0.50
+    knee_oa: 0.50
+  multimodal: true # generate paired IMU + sEMG per synthetic patient
+
+latent_factors:
+  # Common hidden physiological drivers (NEVER ML inputs)
+  impairment_dim: 3
+  factors:
+    - name: "latent_functional_impairment"
+      description: "Overall motor and functional gait degradation"
+      healthy_dist: { mean: 0.15, std: 0.10, bounds: [0.0, 0.4] }
+      oa_dist: { mean: 0.65, std: 0.18, bounds: [0.3, 1.0] }
+    - name: "latent_mechanical_impairment"
+      description: "Joint stiffening and limb loading asymmetry"
+      healthy_dist: { mean: 0.10, std: 0.08, bounds: [0.0, 0.3] }
+      oa_dist: { mean: 0.60, std: 0.20, bounds: [0.2, 1.0] }
+    - name: "latent_neuromuscular_compensation"
+      description: "Co-contraction and altered vastus medialis / lateralis timing"
+      healthy_dist: { mean: 0.12, std: 0.08, bounds: [0.0, 0.35] }
+      oa_dist: { mean: 0.58, std: 0.19, bounds: [0.25, 1.0] }
+
+imu_synthesis:
+  sampling_rate: 100 # Hz
+  trial_duration_sec: 20.0
+  sensors: ["LB", "LF", "RF", "HE"]
+  cadence_range_control: [100.0, 125.0] # steps/min
+  cadence_range_oa: [75.0, 105.0]
+  stride_variability_control: 0.025
+  stride_variability_oa: 0.075
+  asymmetry_index_control: 0.03
+  asymmetry_index_oa: 0.18
+  noise_amplitude: 0.05 # m/s^2 Gaussian noise
+  sensor_drift_rate: 0.001
+
+semg_synthesis:
+  sampling_rate: 2000 # Hz
+  duration_sec: 15.0
+  muscles: ["VM", "VL", "RF", "BF"]
+  firing_rate_hz: 35.0
+  recruitment_noise_std: 0.08
+  mdf_range_healthy_hz: [65.0, 85.0]
+  mdf_range_oa_hz: [45.0, 68.0]
+  vm_vl_ratio_healthy: 1.05
+  vm_vl_ratio_oa: 0.72 # Vastus medialis atrophy/inhibition in KOA
+
+quality_simulation:
+  enabled: true
+  imu:
+    displacement_probability: 0.08
+    drift_probability: 0.10
+    motion_artifact_probability: 0.07
+    missing_samples_rate: 0.01
+  semg:
+    baseline_drift_probability: 0.12
+    electrode_contact_noise_prob: 0.10
+    power_line_hum_snr_db: 25.0
+  quality_score_noise_sigma: 0.05
+
+augmentation_ratios:
+  - 0.0 # 100% real
+  - 0.10 # 90% real + 10% synthetic
+  - 0.25 # 75% real + 25% synthetic
+  - 0.50 # 50% real + 50% synthetic
+  - 0.75 # 25% real + 75% synthetic

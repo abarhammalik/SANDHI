@@ -1,0 +1,261 @@
+subject,group,pathologyKey,pathology,trial_count,split
+PD_7,neuro,PD,parkinson disease,5,TRAIN
+CVA_4,neuro,CVA,cerebrovascular accident,2,TRAIN
+RIL_19,neuro,RIL,radiation-induced leukoencephalopathy,10,TRAIN
+HS_31,healthy,HS,healthy subject,5,TRAIN
+HS_42,healthy,HS,healthy subject,5,TRAIN
+HS_14,healthy,HS,healthy subject,4,TRAIN
+PD_10,neuro,PD,parkinson disease,10,TRAIN
+PD_19,neuro,PD,parkinson disease,5,TRAIN
+CVA_20,neuro,CVA,cerebrovascular accident,2,TRAIN
+HS_51,healthy,HS,healthy subject,4,TRAIN
+HS_64,healthy,HS,healthy subject,5,TRAIN
+HS_32,healthy,HS,healthy subject,5,TRAIN
+CVA_8,neuro,CVA,cerebrovascular accident,2,TRAIN
+HS_53,healthy,HS,healthy subject,5,TRAIN
+HOA_8,ortho,HOA,hip osteoarthritis,2,TRAIN
+HS_33,healthy,HS,healthy subject,5,TRAIN
+CIPN_7,neuro,CIPN,toxic peripheral neuropathy,5,TRAIN
+HOA_12,ortho,HOA,hip osteoarthritis,7,TRAIN
+KOA_9,ortho,KOA,knee osteoarthritis,4,TRAIN
+HS_69,healthy,HS,healthy subject,5,TRAIN
+ACL_8,ortho,ACL,anterior cruciate ligament injury,5,TRAIN
+HOA_5,ortho,HOA,hip osteoarthritis,8,TRAIN
+RIL_32,neuro,RIL,radiation-induced leukoencephalopathy,24,TRAIN
+HS_27,healthy,HS,healthy subject,5,TRAIN
+HOA_11,ortho,HOA,hip osteoarthritis,2,TRAIN
+HS_60,healthy,HS,healthy subject,5,TRAIN
+HOA_1,ortho,HOA,hip osteoarthritis,1,TRAIN
+ACL_11,ortho,ACL,anterior cruciate ligament injury,7,TRAIN
+RIL_13,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+HS_23,healthy,HS,healthy subject,6,TRAIN
+RIL_8,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+KOA_6,ortho,KOA,knee osteoarthritis,2,TRAIN
+CVA_10,neuro,CVA,cerebrovascular accident,2,TRAIN
+HS_28,healthy,HS,healthy subject,4,TRAIN
+KOA_1,ortho,KOA,knee osteoarthritis,5,TRAIN
+HS_59,healthy,HS,healthy subject,5,TRAIN
+KOA_17,ortho,KOA,knee osteoarthritis,4,TRAIN
+CVA_43,neuro,CVA,cerebrovascular accident,2,TRAIN
+RIL_46,neuro,RIL,radiation-induced leukoencephalopathy,15,TRAIN
+RIL_25,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+HS_48,healthy,HS,healthy subject,5,TRAIN
+HS_25,healthy,HS,healthy subject,5,TRAIN
+HS_10,healthy,HS,healthy subject,5,TRAIN
+CVA_30,neuro,CVA,cerebrovascular accident,2,TRAIN
+HS_7,healthy,HS,healthy subject,5,TRAIN
+CIPN_9,neuro,CIPN,toxic peripheral neuropathy,9,TRAIN
+RIL_36,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+CIPN_15,neuro,CIPN,toxic peripheral neuropathy,5,TRAIN
+CIPN_18,neuro,CIPN,toxic peripheral neuropathy,5,TRAIN
+CIPN_1,neuro,CIPN,toxic peripheral neuropathy,5,TRAIN
+HS_57,healthy,HS,healthy subject,5,TRAIN
+KOA_16,ortho,KOA,knee osteoarthritis,6,TRAIN
+ACL_4,ortho,ACL,anterior cruciate ligament injury,7,TRAIN
+CIPN_2,neuro,CIPN,toxic peripheral neuropathy,5,TRAIN
+CVA_35,neuro,CVA,cerebrovascular accident,2,TRAIN
+CVA_29,neuro,CVA,cerebrovascular accident,5,TRAIN
+RIL_49,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+CIPN_17,neuro,CIPN,toxic peripheral neuropathy,5,TRAIN
+HS_65,healthy,HS,healthy subject,2,TRAIN
+HS_12,healthy,HS,healthy subject,5,TRAIN
+CVA_7,neuro,CVA,cerebrovascular accident,2,TRAIN
+HS_45,healthy,HS,healthy subject,2,TRAIN
+CVA_39,neuro,CVA,cerebrovascular accident,2,TRAIN
+CVA_44,neuro,CVA,cerebrovascular accident,2,TRAIN
+RIL_51,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+RIL_40,neuro,RIL,radiation-induced leukoencephalopathy,9,TRAIN
+HS_67,healthy,HS,healthy subject,5,TRAIN
+CVA_40,neuro,CVA,cerebrovascular accident,2,TRAIN
+RIL_33,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+HS_26,healthy,HS,healthy subject,1,TRAIN
+KOA_4,ortho,KOA,knee osteoarthritis,5,TRAIN
+RIL_23,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+PD_8,neuro,PD,parkinson disease,5,TRAIN
+HS_52,healthy,HS,healthy subject,4,TRAIN
+CVA_1,neuro,CVA,cerebrovascular accident,2,TRAIN
+CVA_2,neuro,CVA,cerebrovascular accident,2,TRAIN
+HS_20,healthy,HS,healthy subject,2,TRAIN
+HS_49,healthy,HS,healthy subject,3,TRAIN
+HS_58,healthy,HS,healthy subject,2,TRAIN
+HS_18,healthy,HS,healthy subject,5,TRAIN
+HOA_14,ortho,HOA,hip osteoarthritis,4,TRAIN
+KOA_7,ortho,KOA,knee osteoarthritis,2,TRAIN
+CVA_13,neuro,CVA,cerebrovascular accident,2,TRAIN
+CIPN_4,neuro,CIPN,toxic peripheral neuropathy,5,TRAIN
+HS_73,healthy,HS,healthy subject,5,TRAIN
+PD_9,neuro,PD,parkinson disease,5,TRAIN
+CVA_38,neuro,CVA,cerebrovascular accident,2,TRAIN
+HS_43,healthy,HS,healthy subject,5,TRAIN
+HOA_4,ortho,HOA,hip osteoarthritis,8,TRAIN
+RIL_31,neuro,RIL,radiation-induced leukoencephalopathy,15,TRAIN
+CVA_45,neuro,CVA,cerebrovascular accident,2,TRAIN
+RIL_20,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+KOA_13,ortho,KOA,knee osteoarthritis,7,TRAIN
+CVA_9,neuro,CVA,cerebrovascular accident,2,TRAIN
+RIL_2,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+ACL_10,ortho,ACL,anterior cruciate ligament injury,5,TRAIN
+CVA_16,neuro,CVA,cerebrovascular accident,2,TRAIN
+PD_1,neuro,PD,parkinson disease,15,TRAIN
+RIL_22,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+HS_54,healthy,HS,healthy subject,5,TRAIN
+CVA_48,neuro,CVA,cerebrovascular accident,2,TRAIN
+CIPN_5,neuro,CIPN,toxic peripheral neuropathy,5,TRAIN
+CVA_5,neuro,CVA,cerebrovascular accident,2,TRAIN
+PD_21,neuro,PD,parkinson disease,5,TRAIN
+CVA_14,neuro,CVA,cerebrovascular accident,2,TRAIN
+ACL_9,ortho,ACL,anterior cruciate ligament injury,7,TRAIN
+CIPN_6,neuro,CIPN,toxic peripheral neuropathy,5,TRAIN
+PD_24,neuro,PD,parkinson disease,5,TRAIN
+HOA_10,ortho,HOA,hip osteoarthritis,2,TRAIN
+HS_36,healthy,HS,healthy subject,5,TRAIN
+RIL_18,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+HOA_13,ortho,HOA,hip osteoarthritis,8,TRAIN
+HS_4,healthy,HS,healthy subject,10,TRAIN
+CVA_19,neuro,CVA,cerebrovascular accident,4,TRAIN
+HS_41,healthy,HS,healthy subject,5,TRAIN
+KOA_15,ortho,KOA,knee osteoarthritis,2,TRAIN
+PD_12,neuro,PD,parkinson disease,5,TRAIN
+HS_11,healthy,HS,healthy subject,5,TRAIN
+RIL_30,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+CVA_26,neuro,CVA,cerebrovascular accident,2,TRAIN
+ACL_3,ortho,ACL,anterior cruciate ligament injury,5,TRAIN
+PD_4,neuro,PD,parkinson disease,5,TRAIN
+CVA_27,neuro,CVA,cerebrovascular accident,4,TRAIN
+HS_3,healthy,HS,healthy subject,5,TRAIN
+HS_56,healthy,HS,healthy subject,5,TRAIN
+CVA_36,neuro,CVA,cerebrovascular accident,2,TRAIN
+CVA_6,neuro,CVA,cerebrovascular accident,4,TRAIN
+PD_18,neuro,PD,parkinson disease,5,TRAIN
+CVA_3,neuro,CVA,cerebrovascular accident,2,TRAIN
+KOA_10,ortho,KOA,knee osteoarthritis,7,TRAIN
+HS_15,healthy,HS,healthy subject,5,TRAIN
+PD_23,neuro,PD,parkinson disease,5,TRAIN
+PD_2,neuro,PD,parkinson disease,5,TRAIN
+PD_6,neuro,PD,parkinson disease,5,TRAIN
+RIL_37,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+CIPN_8,neuro,CIPN,toxic peripheral neuropathy,5,TRAIN
+CVA_18,neuro,CVA,cerebrovascular accident,2,TRAIN
+HS_38,healthy,HS,healthy subject,5,TRAIN
+RIL_28,neuro,RIL,radiation-induced leukoencephalopathy,19,TRAIN
+RIL_48,neuro,RIL,radiation-induced leukoencephalopathy,10,TRAIN
+HS_6,healthy,HS,healthy subject,29,TRAIN
+RIL_14,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+HS_50,healthy,HS,healthy subject,5,TRAIN
+RIL_29,neuro,RIL,radiation-induced leukoencephalopathy,15,TRAIN
+RIL_47,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+HS_9,healthy,HS,healthy subject,5,TRAIN
+RIL_12,neuro,RIL,radiation-induced leukoencephalopathy,14,TRAIN
+RIL_35,neuro,RIL,radiation-induced leukoencephalopathy,10,TRAIN
+HS_71,healthy,HS,healthy subject,2,TRAIN
+HS_34,healthy,HS,healthy subject,5,TRAIN
+KOA_11,ortho,KOA,knee osteoarthritis,2,TRAIN
+CVA_32,neuro,CVA,cerebrovascular accident,2,TRAIN
+RIL_16,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+RIL_15,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+PD_22,neuro,PD,parkinson disease,10,TRAIN
+RIL_44,neuro,RIL,radiation-induced leukoencephalopathy,10,TRAIN
+RIL_41,neuro,RIL,radiation-induced leukoencephalopathy,10,TRAIN
+RIL_4,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+CIPN_19,neuro,CIPN,toxic peripheral neuropathy,5,TRAIN
+CVA_37,neuro,CVA,cerebrovascular accident,2,TRAIN
+PD_3,neuro,PD,parkinson disease,5,TRAIN
+CVA_46,neuro,CVA,cerebrovascular accident,2,TRAIN
+RIL_45,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+ACL_1,ortho,ACL,anterior cruciate ligament injury,8,TRAIN
+HS_62,healthy,HS,healthy subject,5,TRAIN
+HOA_7,ortho,HOA,hip osteoarthritis,2,TRAIN
+HS_2,healthy,HS,healthy subject,3,TRAIN
+HS_72,healthy,HS,healthy subject,5,TRAIN
+PD_13,neuro,PD,parkinson disease,5,TRAIN
+ACL_7,ortho,ACL,anterior cruciate ligament injury,5,TRAIN
+HS_21,healthy,HS,healthy subject,5,TRAIN
+CVA_24,neuro,CVA,cerebrovascular accident,4,TRAIN
+RIL_43,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+RIL_21,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+CIPN_3,neuro,CIPN,toxic peripheral neuropathy,5,TRAIN
+KOA_2,ortho,KOA,knee osteoarthritis,4,TRAIN
+HS_29,healthy,HS,healthy subject,4,TRAIN
+HS_37,healthy,HS,healthy subject,5,TRAIN
+CVA_41,neuro,CVA,cerebrovascular accident,2,TRAIN
+KOA_18,ortho,KOA,knee osteoarthritis,1,TRAIN
+RIL_27,neuro,RIL,radiation-induced leukoencephalopathy,10,TRAIN
+RIL_17,neuro,RIL,radiation-induced leukoencephalopathy,5,TRAIN
+ACL_6,ortho,ACL,anterior cruciate ligament injury,7,VAL
+RIL_34,neuro,RIL,radiation-induced leukoencephalopathy,5,VAL
+CIPN_16,neuro,CIPN,toxic peripheral neuropathy,5,VAL
+RIL_3,neuro,RIL,radiation-induced leukoencephalopathy,5,VAL
+CVA_23,neuro,CVA,cerebrovascular accident,3,VAL
+CIPN_13,neuro,CIPN,toxic peripheral neuropathy,4,VAL
+KOA_5,ortho,KOA,knee osteoarthritis,4,VAL
+CVA_28,neuro,CVA,cerebrovascular accident,2,VAL
+CVA_17,neuro,CVA,cerebrovascular accident,3,VAL
+HS_70,healthy,HS,healthy subject,5,VAL
+RIL_6,neuro,RIL,radiation-induced leukoencephalopathy,5,VAL
+KOA_14,ortho,KOA,knee osteoarthritis,9,VAL
+CVA_47,neuro,CVA,cerebrovascular accident,2,VAL
+HS_19,healthy,HS,healthy subject,5,VAL
+ACL_2,ortho,ACL,anterior cruciate ligament injury,2,VAL
+HS_24,healthy,HS,healthy subject,5,VAL
+HS_66,healthy,HS,healthy subject,5,VAL
+CVA_21,neuro,CVA,cerebrovascular accident,2,VAL
+HS_40,healthy,HS,healthy subject,5,VAL
+PD_11,neuro,PD,parkinson disease,5,VAL
+RIL_9,neuro,RIL,radiation-induced leukoencephalopathy,1,VAL
+CVA_34,neuro,CVA,cerebrovascular accident,16,VAL
+RIL_50,neuro,RIL,radiation-induced leukoencephalopathy,15,VAL
+HS_1,healthy,HS,healthy subject,5,VAL
+RIL_24,neuro,RIL,radiation-induced leukoencephalopathy,10,VAL
+HS_22,healthy,HS,healthy subject,4,VAL
+HS_63,healthy,HS,healthy subject,5,VAL
+RIL_38,neuro,RIL,radiation-induced leukoencephalopathy,20,VAL
+CVA_31,neuro,CVA,cerebrovascular accident,2,VAL
+HOA_15,ortho,HOA,hip osteoarthritis,10,VAL
+HS_47,healthy,HS,healthy subject,5,VAL
+PD_5,neuro,PD,parkinson disease,10,VAL
+HOA_2,ortho,HOA,hip osteoarthritis,2,VAL
+CVA_33,neuro,CVA,cerebrovascular accident,2,VAL
+RIL_42,neuro,RIL,radiation-induced leukoencephalopathy,2,VAL
+HS_17,healthy,HS,healthy subject,5,VAL
+HS_61,healthy,HS,healthy subject,5,VAL
+PD_16,neuro,PD,parkinson disease,5,VAL
+CIPN_14,neuro,CIPN,toxic peripheral neuropathy,5,VAL
+HOA_3,ortho,HOA,hip osteoarthritis,6,TEST
+HS_39,healthy,HS,healthy subject,5,TEST
+PD_14,neuro,PD,parkinson disease,5,TEST
+CIPN_11,neuro,CIPN,toxic peripheral neuropathy,5,TEST
+CVA_11,neuro,CVA,cerebrovascular accident,2,TEST
+PD_15,neuro,PD,parkinson disease,15,TEST
+RIL_1,neuro,RIL,radiation-induced leukoencephalopathy,8,TEST
+KOA_8,ortho,KOA,knee osteoarthritis,2,TEST
+RIL_26,neuro,RIL,radiation-induced leukoencephalopathy,6,TEST
+CVA_49,neuro,CVA,cerebrovascular accident,2,TEST
+RIL_5,neuro,RIL,radiation-induced leukoencephalopathy,5,TEST
+CVA_42,neuro,CVA,cerebrovascular accident,2,TEST
+HS_16,healthy,HS,healthy subject,5,TEST
+HS_5,healthy,HS,healthy subject,4,TEST
+HS_55,healthy,HS,healthy subject,5,TEST
+HOA_9,ortho,HOA,hip osteoarthritis,5,TEST
+HS_46,healthy,HS,healthy subject,4,TEST
+KOA_3,ortho,KOA,knee osteoarthritis,7,TEST
+HS_68,healthy,HS,healthy subject,4,TEST
+PD_20,neuro,PD,parkinson disease,10,TEST
+HS_13,healthy,HS,healthy subject,5,TEST
+HS_8,healthy,HS,healthy subject,5,TEST
+RIL_7,neuro,RIL,radiation-induced leukoencephalopathy,5,TEST
+RIL_39,neuro,RIL,radiation-induced leukoencephalopathy,10,TEST
+CIPN_12,neuro,CIPN,toxic peripheral neuropathy,5,TEST
+RIL_11,neuro,RIL,radiation-induced leukoencephalopathy,5,TEST
+HS_35,healthy,HS,healthy subject,5,TEST
+PD_17,neuro,PD,parkinson disease,5,TEST
+HS_44,healthy,HS,healthy subject,5,TEST
+HS_30,healthy,HS,healthy subject,2,TEST
+ACL_5,ortho,ACL,anterior cruciate ligament injury,2,TEST
+CIPN_10,neuro,CIPN,toxic peripheral neuropathy,5,TEST
+HOA_6,ortho,HOA,hip osteoarthritis,7,TEST
+CVA_15,neuro,CVA,cerebrovascular accident,3,TEST
+CVA_22,neuro,CVA,cerebrovascular accident,2,TEST
+CVA_12,neuro,CVA,cerebrovascular accident,4,TEST
+KOA_12,ortho,KOA,knee osteoarthritis,5,TEST
+CVA_25,neuro,CVA,cerebrovascular accident,2,TEST
+RIL_10,neuro,RIL,radiation-induced leukoencephalopathy,10,TEST

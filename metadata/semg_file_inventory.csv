@@ -1,0 +1,265 @@
+folder,file,ext,subject,ncols,nrows,sensors,has_rms,has_imu
+MVC test sEMG data summary,MVC_033.xlsx,.xlsx,33,102,22540,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_034.xlsx,.xlsx,34,20,26500,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,MVC_035.xlsx,.xlsx,35,102,33760,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_036.xlsx,.xlsx,36,102,27030,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_037.xlsx,.xlsx,37,102,26240,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_038.xlsx,.xlsx,38,102,46570,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_039.xlsx,.xlsx,39,102,35080,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_040.xlsx,.xlsx,40,102,31920,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_041.xlsx,.xlsx,41,102,29280,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_042.xlsx,.xlsx,42,102,41550,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_043.xlsx,.xlsx,43,102,22410,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_044.xlsx,.xlsx,44,102,24130,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_045.xlsx,.xlsx,45,102,34940,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_046.xlsx,.xlsx,46,102,39570,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_047.xlsx,.xlsx,47,102,25840,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_048.xlsx,.xlsx,48,102,35880,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_049.xlsx,.xlsx,49,20,42340,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,MVC_050.xlsx,.xlsx,50,18,29670,"[1, 2, 3, 4, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,MVC_051.xlsx,.xlsx,51,102,35220,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_052.xlsx,.xlsx,52,20,46440,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,MVC_053.xlsx,.xlsx,53,102,30330,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_054.xlsx,.xlsx,54,102,29150,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_055.xlsx,.xlsx,55,102,24000,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_056.xlsx,.xlsx,56,102,47760,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_057.xlsx,.xlsx,57,102,31380,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_058.xlsx,.xlsx,58,102,42610,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_059.xlsx,.xlsx,59,102,45390,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_060.xlsx,.xlsx,60,102,32180,"[9, 10, 11, 12, 13, 14]",True,True
+MVC test sEMG data summary,MVC_061.xlsx,.xlsx,61,102,40550,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_062.xlsx,.xlsx,62,20,35440,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,MVC_063.xlsx,.xlsx,63,102,39700,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_064.xlsx,.xlsx,64,102,32840,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_065.xlsx,.xlsx,65,102,22940,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_066.xlsx,.xlsx,66,102,33900,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_067.xlsx,.xlsx,67,102,40610,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_068.xlsx,.xlsx,68,20,24790,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,MVC_069.xlsx,.xlsx,69,102,25980,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_070.xlsx,.xlsx,70,102,23730,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_071.xlsx,.xlsx,71,102,31780,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_072.xlsx,.xlsx,72,102,19640,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_073.xlsx,.xlsx,73,102,20560,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_074.xlsx,.xlsx,74,102,27820,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_075.xlsx,.xlsx,75,20,47490,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,MVC_076.xlsx,.xlsx,76,102,27030,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_077.xlsx,.xlsx,77,102,39770,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_078.xlsx,.xlsx,78,102,40760,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_079.xlsx,.xlsx,79,102,27650,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_080.xlsx,.xlsx,80,102,20560,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_081.xlsx,.xlsx,81,102,26500,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_082.xlsx,.xlsx,82,102,26370,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_083.xlsx,.xlsx,83,102,25970,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_084.xlsx,.xlsx,84,102,35750,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_085.xlsx,.xlsx,85,102,22540,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_086.xlsx,.xlsx,86,102,29800,"[9, 10, 11, 12, 13, 14]",True,True
+MVC test sEMG data summary,MVC_087.xlsx,.xlsx,87,102,27820,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,MVC_088.xlsx,.xlsx,88,102,47890,"[1, 2, 3, 4, 5, 6]",True,True
+MVC test sEMG data summary,mvc data_1.csv,.csv,1,20,37330,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_10.csv,.csv,10,18,29670,"[1, 2, 3, 4, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_11.csv,.csv,11,20,37770,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_12.csv,.csv,12,20,46440,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_13.csv,.csv,13,20,24790,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_14.csv,.csv,14,18,27820,"[1, 2, 3, 4, 5, 9, 10, 11, 12]",False,False
+MVC test sEMG data summary,mvc data_15.csv,.csv,15,18,21670,"[1, 2, 3, 4, 5, 9, 10, 11, 12]",False,False
+MVC test sEMG data summary,mvc data_16.csv,.csv,16,20,52640,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_17.csv,.csv,17,20,25840,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_18.csv,.csv,18,20,29800,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_19.csv,.csv,19,20,31250,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_2.csv,.csv,2,20,22940,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_20.csv,.csv,20,20,50350,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_21.csv,.csv,21,20,50400,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_22.csv,.csv,22,20,37720,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_23.csv,.csv,23,20,31920,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_24.csv,.csv,24,20,27820,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_25.csv,.csv,25,20,32570,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_26.csv,.csv,26,20,47490,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_27.csv,.csv,27,20,49830,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_28.csv,.csv,28,20,35520,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_29.csv,.csv,29,20,39310,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_3.csv,.csv,3,20,20300,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_30.csv,.csv,30,20,20830,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_31.csv,.csv,31,20,35480,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_32.csv,.csv,32,20,47090,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_4.csv,.csv,4,20,27030,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_5.csv,.csv,5,20,43130,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_6.csv,.csv,6,20,35440,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_7.csv,.csv,7,20,29670,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_8.csv,.csv,8,20,26500,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+MVC test sEMG data summary,mvc data_9.csv,.csv,9,20,42340,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_033.xlsx,.xlsx,33,102,33760,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_034.xlsx,.xlsx,34,20,36270,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_035.xlsx,.xlsx,35,102,39970,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_036.xlsx,.xlsx,36,102,31390,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_037.xlsx,.xlsx,37,102,25710,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_038.xlsx,.xlsx,38,102,36670,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_039.xlsx,.xlsx,39,102,30260,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_040.xlsx,.xlsx,40,102,34030,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_041.xlsx,.xlsx,41,102,28700,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_042.xlsx,.xlsx,42,102,29540,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_043.xlsx,.xlsx,43,102,24660,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_044.xlsx,.xlsx,44,102,29280,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_045.xlsx,.xlsx,45,102,27690,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_046.xlsx,.xlsx,46,102,29800,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_047.xlsx,.xlsx,47,102,28090,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_048.xlsx,.xlsx,48,102,25180,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_049.xlsx,.xlsx,49,20,37850,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_050.xlsx,.xlsx,50,18,36400,"[1, 2, 3, 4, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_051.xlsx,.xlsx,51,102,27560,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_052.xlsx,.xlsx,52,20,36230,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_053.xlsx,.xlsx,53,102,31260,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_054.xlsx,.xlsx,54,102,31120,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_055.xlsx,.xlsx,55,102,23730,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_056.xlsx,.xlsx,56,102,26370,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_057.xlsx,.xlsx,57,102,32950,"[9, 10, 11, 12, 13, 14]",True,True
+up-down stair sEMG data summary,up-down stair_058.xlsx,.xlsx,58,102,29670,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_059.xlsx,.xlsx,59,102,43400,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_060.xlsx,.xlsx,60,102,40370,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_061.xlsx,.xlsx,61,102,28620,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_062.xlsx,.xlsx,62,102,29940,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_063.xlsx,.xlsx,63,102,31790,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_064.xlsx,.xlsx,64,102,18980,"[9, 10, 11, 12, 13, 14]",True,True
+up-down stair sEMG data summary,up-down stair_065.xlsx,.xlsx,65,102,29270,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_066.xlsx,.xlsx,66,20,43000,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_067.xlsx,.xlsx,67,102,78210,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_068.xlsx,.xlsx,68,102,36010,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_069.xlsx,.xlsx,69,102,30600,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_070.xlsx,.xlsx,70,102,29230,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_071.xlsx,.xlsx,71,102,32970,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_072.xlsx,.xlsx,72,20,45250,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_073.xlsx,.xlsx,73,102,34950,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_074.xlsx,.xlsx,74,102,28350,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_075.xlsx,.xlsx,75,102,30070,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_076.xlsx,.xlsx,76,102,33370,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_077.xlsx,.xlsx,77,102,27560,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_078.xlsx,.xlsx,78,102,32310,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_079.xlsx,.xlsx,79,20,45250,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_080.xlsx,.xlsx,80,102,35350,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_081.xlsx,.xlsx,81,102,28220,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_082.xlsx,.xlsx,82,102,30200,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_083.xlsx,.xlsx,83,102,33770,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_084.xlsx,.xlsx,84,102,33100,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_085.xlsx,.xlsx,85,102,34160,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_086.xlsx,.xlsx,86,102,29800,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_087.xlsx,.xlsx,87,102,30330,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_088.xlsx,.xlsx,88,102,29540,"[1, 2, 3, 4, 5, 6]",True,True
+up-down stair sEMG data summary,up-down stair_1.csv,.csv,1,20,35880,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_10.csv,.csv,10,18,36400,"[1, 2, 3, 4, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_11.csv,.csv,11,20,35480,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_12.csv,.csv,12,20,36230,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_13.csv,.csv,13,20,37330,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_14.csv,.csv,14,18,37460,"[1, 2, 3, 4, 5, 9, 10, 11, 12]",False,False
+up-down stair sEMG data summary,up-down stair_15.csv,.csv,15,18,37070,"[1, 2, 3, 4, 5, 9, 10, 11, 12]",False,False
+up-down stair sEMG data summary,up-down stair_16.csv,.csv,16,20,35210,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_17.csv,.csv,17,20,57920,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_18.csv,.csv,18,20,28080,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_19.csv,.csv,19,20,25010,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_2.csv,.csv,2,20,36010,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_20.csv,.csv,20,20,36080,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_21.csv,.csv,21,20,35350,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_22.csv,.csv,22,20,35700,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_23.csv,.csv,23,20,34560,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_24.csv,.csv,24,20,34950,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_25.csv,.csv,25,20,30600,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_26.csv,.csv,26,20,45250,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_27.csv,.csv,27,20,44590,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_28.csv,.csv,28,20,36540,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_29.csv,.csv,29,20,39180,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_3.csv,.csv,3,20,39440,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_30.csv,.csv,30,20,36150,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_31.csv,.csv,31,20,32570,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_32.csv,.csv,32,20,31520,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_4.csv,.csv,4,20,47620,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_5.csv,.csv,5,20,38510,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_6.csv,.csv,6,20,43000,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_7.csv,.csv,7,20,36240,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_8.csv,.csv,8,20,36270,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+up-down stair sEMG data summary,up-down stair_9.csv,.csv,9,20,37850,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_033.xlsx,.xlsx,33,102,36540,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_034.xlsx,.xlsx,34,20,36530,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_035.xlsx,.xlsx,35,102,32310,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_036.xlsx,.xlsx,36,102,32180,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_037.xlsx,.xlsx,37,102,32840,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_038.xlsx,.xlsx,38,102,33500,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_039.xlsx,.xlsx,39,102,33890,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_040.xlsx,.xlsx,40,102,33100,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_041.xlsx,.xlsx,41,102,32050,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_042.xlsx,.xlsx,42,102,35610,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_043.xlsx,.xlsx,43,102,32310,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_044.xlsx,.xlsx,44,102,28750,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_045.xlsx,.xlsx,45,102,32820,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_046.xlsx,.xlsx,46,102,37590,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_047.xlsx,.xlsx,47,102,30600,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_048.xlsx,.xlsx,48,102,32710,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_049.xlsx,.xlsx,49,20,46550,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_050.xlsx,.xlsx,50,18,35810,"[1, 2, 3, 4, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_051.xlsx,.xlsx,51,102,33230,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_052.xlsx,.xlsx,52,20,46700,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_053.xlsx,.xlsx,53,102,37060,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_054.xlsx,.xlsx,54,102,33240,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_055.xlsx,.xlsx,55,102,32050,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_056.xlsx,.xlsx,56,102,32310,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_057.xlsx,.xlsx,57,102,34420,"[9, 10, 11, 12, 13, 14]",True,True
+walk sEMG data summary,walk data_058.xlsx,.xlsx,58,102,34820,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_059.xlsx,.xlsx,59,102,38910,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_060.xlsx,.xlsx,60,102,33760,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_061.xlsx,.xlsx,61,102,32430,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_062.xlsx,.xlsx,62,102,33500,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_063.xlsx,.xlsx,63,102,36670,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_064.xlsx,.xlsx,64,102,32050,"[9, 10, 11, 12, 13, 14]",True,True
+walk sEMG data summary,walk data_065.xlsx,.xlsx,65,102,32970,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_066.xlsx,.xlsx,66,20,36270,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_067.xlsx,.xlsx,67,102,39970,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_068.xlsx,.xlsx,68,102,34690,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_069.xlsx,.xlsx,69,102,26740,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_070.xlsx,.xlsx,70,102,33760,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_071.xlsx,.xlsx,71,102,33500,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_072.xlsx,.xlsx,72,20,35740,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_073.xlsx,.xlsx,73,102,31920,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_074.xlsx,.xlsx,74,102,31650,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_075.xlsx,.xlsx,75,102,32440,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_076.xlsx,.xlsx,76,102,30850,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_077.xlsx,.xlsx,77,102,30200,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_078.xlsx,.xlsx,78,102,32840,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_079.xlsx,.xlsx,79,20,33500,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_080.xlsx,.xlsx,80,102,33370,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_081.xlsx,.xlsx,81,102,28080,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_082.xlsx,.xlsx,82,102,32180,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_083.xlsx,.xlsx,83,102,32580,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_084.xlsx,.xlsx,84,102,32580,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_085.xlsx,.xlsx,85,102,34430,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_086.xlsx,.xlsx,86,102,30710,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_087.xlsx,.xlsx,87,102,33900,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_088.xlsx,.xlsx,88,102,32180,"[1, 2, 3, 4, 5, 6]",True,True
+walk sEMG data summary,walk data_1.csv,.csv,1,20,41020,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_10.csv,.csv,10,18,35810,"[1, 2, 3, 4, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_11.csv,.csv,11,20,42740,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_12.csv,.csv,12,20,46700,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_13.csv,.csv,13,20,35740,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_14.csv,.csv,14,18,46260,"[1, 2, 3, 4, 5, 9, 10, 11, 12]",False,False
+walk sEMG data summary,walk data_15.csv,.csv,15,18,37570,"[1, 2, 3, 4, 5, 9, 10, 11, 12]",False,False
+walk sEMG data summary,walk data_16.csv,.csv,16,20,35730,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_17.csv,.csv,17,20,38380,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_18.csv,.csv,18,20,36400,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_19.csv,.csv,19,20,39530,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_2.csv,.csv,2,20,37060,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_20.csv,.csv,20,20,38250,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_21.csv,.csv,21,20,33900,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_22.csv,.csv,22,20,34560,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_23.csv,.csv,23,20,34690,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_24.csv,.csv,24,20,36270,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_25.csv,.csv,25,20,34030,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_26.csv,.csv,26,20,33500,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_27.csv,.csv,27,20,43010,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_28.csv,.csv,28,20,44060,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_29.csv,.csv,29,20,40760,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_3.csv,.csv,3,20,37590,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_30.csv,.csv,30,20,36620,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_31.csv,.csv,31,20,34020,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_32.csv,.csv,32,20,36140,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_4.csv,.csv,4,20,39970,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_5.csv,.csv,5,20,46970,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_6.csv,.csv,6,20,36270,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_7.csv,.csv,7,20,36400,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_8.csv,.csv,8,20,36530,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False
+walk sEMG data summary,walk data_9.csv,.csv,9,20,46550,"[1, 2, 3, 4, 5, 9, 10, 11, 12, 13]",False,False

@@ -1,0 +1,13 @@
+accuracy,balanced_accuracy,sensitivity,specificity,precision,f1,roc_auc,pr_auc,brier_score,n_samples,n_positive,n_negative,experiment,training_data,model,eval_set
+0.8571,0.7296,0.5,0.9592,0.7778,0.6087,0.8054,0.6673,0.1309,63,14,49,Unimodal IMU,Real Only,XGBoost,Real IMU Test
+0.8095,0.5714,0.1429,1.0,1.0,0.25,0.8659,0.7607,0.1307,63,14,49,Unimodal IMU,Real + Synthetic,XGBoost,Real IMU Test
+0.5714,0.5714,0.4286,0.7143,0.6,0.5,0.551,0.6706,0.262,14,7,7,Unimodal sEMG,Real Only,Random Forest,Real sEMG Test
+0.5,0.5,0.1429,0.8571,0.5,0.2222,0.3265,0.5482,0.2875,14,7,7,Unimodal sEMG,Real + Synthetic,Random Forest,Real sEMG Test
+0.8052,0.6726,0.381,0.9643,0.8,0.5161,0.9396,0.8347,0.1128,77,21,56,Multimodal Early Fusion,Real Only,XGBoost,Real Combined Test
+0.8182,0.6815,0.381,0.9821,0.8889,0.5333,0.9613,0.8913,0.1038,77,21,56,Multimodal Early Fusion,Real + Synthetic,XGBoost,Real Combined Test
+0.8442,0.7292,0.4762,0.9821,0.9091,0.625,0.9511,0.8752,0.0991,77,21,56,Multimodal Early Fusion,Real + Synthetic,Random Forest,Real Combined Test
+0.8312,0.7351,0.5238,0.9464,0.7857,0.6286,0.9303,0.7822,0.1329,77,21,56,Multimodal Early Fusion,Real + Synthetic,Logistic Regression,Real Combined Test
+0.8052,0.6577,0.3333,0.9821,0.875,0.4828,0.926,0.7929,0.1452,77,21,56,Multimodal Late Fusion,Real + Synthetic,Meta-LogisticRegression,Real Combined Test
+0.8571,0.6786,0.3571,1.0,1.0,0.5263,0.9971,0.9911,0.0808,63,14,49,Modality Slices,Real + Synthetic,Early Fusion XGB,Real IMU Test Only
+0.6429,0.6429,0.4286,0.8571,0.75,0.5455,0.8265,0.8242,0.2077,14,7,7,Modality Slices,Real + Synthetic,Early Fusion XGB,Real sEMG Test Only
+0.7662,0.6161,0.2857,0.9464,0.6667,0.4,0.9379,0.8137,0.11,77,21,56,Robustness Stress Test,Real + Synthetic,Early Fusion XGB,Real Test with 50% Noise/Degradation

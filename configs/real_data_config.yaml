@@ -1,0 +1,81 @@
+# ARTHROSCAN-NER Real Data Pipeline Configuration
+random_seed: 42
+
+paths:
+  imu_raw_dir: "data/real/imu/dataset/data"
+  imu_processed_dir: "data/processed/imu"
+  imu_features_path: "data/features/real_imu_features.parquet"
+  
+  semg_raw_dir: "data/real/semg/raw/full sEMG data in correct format"
+  semg_bundle_dir: "data/real/semg/bundle"
+  semg_processed_dir: "data/processed/semg"
+  semg_features_path: "data/features/real_semg_features.parquet"
+  
+  splits_imu_path: "metadata/imu_splits.csv"
+  splits_semg_path: "metadata/semg_splits.csv"
+  data_lineage_path: "metadata/data_lineage.csv"
+
+splits:
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+  split_level: "subject_id"
+  stratify_by: "class_label"
+
+imu:
+  sampling_rate: 100 # Hz
+  sensors: ["HE", "LB", "LF", "RF"]
+  channels: ["Acc_X", "Acc_Y", "Acc_Z", "Gyr_X", "Gyr_Y", "Gyr_Z"]
+  filter:
+    type: "butterworth"
+    order: 4
+    cutoff_hz: 20.0
+  drift_correction_highpass_hz: 0.25
+  target_cohorts:
+    healthy: "HS"
+    target_pathology: "KOA" # Knee Osteoarthritis
+    ortho_cohort: ["KOA", "HOA", "ACL"]
+  gait:
+    min_stride_duration_sec: 0.6
+    max_stride_duration_sec: 2.5
+    stance_swing_ratio_nominal: 0.60
+
+semg:
+  sampling_rate: 2000 # Hz
+  tasks: ["walk", "stair", "mvc"]
+  target_muscles:
+    vm:
+      left_sensor: 1
+      right_sensor: 9
+      channel: "EMG_CH2"
+      name: "Vastus Medialis"
+    vl:
+      left_sensor: 3
+      right_sensor: 11
+      channel: "EMG_CH2"
+      name: "Vastus Lateralis"
+    rf:
+      left_sensor: 2
+      right_sensor: 10
+      channel: "EMG_CH2"
+      name: "Rectus Femoris"
+    bf:
+      left_sensor: 4
+      right_sensor: 12
+      channel: "EMG_CH2"
+      name: "Biceps Femoris"
+  filter:
+    bandpass:
+      low_hz: 20.0
+      high_hz: 450.0
+      order: 4
+    notch:
+      center_hz: 50.0
+      quality_factor: 30.0
+    envelope:
+      low_hz: 6.0
+      order: 4
+  psd:
+    nperseg: 1000 # 500 ms window at 2000 Hz
+    noverlap: 500 # 50% overlap
+    window: "hann"

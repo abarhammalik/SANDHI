@@ -1,0 +1,4 @@
+data/real/
+data/arthroscan/real/
+.venv/
+*.zip

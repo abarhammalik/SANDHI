@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARTHROSCAN-NER | Multimodal AI Diagnostic Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+      <div class="brand">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+          </svg>
+        </div>
+        <div>
+          <div class="brand-title-wrap">
+            <h1>ARTHROSCAN<span class="accent-text">-NER</span></h1>
+            <span class="version-tag">v2.1 AI Diagnostic Suite</span>
+          </div>
+          <p class="subtitle">Multimodal Kinematic (IMU) & Neuromuscular (sEMG) Clinical Assessment</p>
+        </div>
+      </div>
+
+      <div class="nav-controls">
+        <!-- Theme Toggle Switch -->
+        <button type="button" class="theme-toggle-btn" id="theme-toggle" onclick="toggleTheme()" title="Toggle Light / Dark Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <span class="theme-label" id="theme-text">Theme</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Quick Load Presets Bar -->
+    <section class="preset-section">
+      <div class="preset-header">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+        </svg>
+        <span>One-Click Test Patient Profiles:</span>
+      </div>
+      <div class="preset-buttons">
+        <button type="button" class="btn-preset" id="preset-healthy" onclick="loadPreset('healthy_real')">
+          <span class="dot green"></span> Healthy Control (Real)
+        </button>
+        <button type="button" class="btn-preset" id="preset-koa" onclick="loadPreset('koa_real')">
+          <span class="dot red"></span> Severe KOA Patient (Real)
+        </button>
+        <button type="button" class="btn-preset" id="preset-imu" onclick="loadPreset('imu_only')">
+          <span class="dot blue"></span> IMU Gait-Only Patient
+        </button>
+        <button type="button" class="btn-preset" id="preset-semg" onclick="loadPreset('semg_only')">
+          <span class="dot purple"></span> sEMG Muscle-Only Patient
+        </button>
+        <button type="button" class="btn-preset" id="preset-paired" onclick="loadPreset('paired_multimodal')">
+          <span class="dot cyan"></span> Paired Multimodal (Synthetic)
+        </button>
+        <button type="button" class="btn-preset-clear" onclick="resetForm()">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
+            <path d="M21 3v5h-5"/>
+            <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/>
+            <path d="M8 16H3v5"/>
+          </svg>
+          Reset
+        </button>
+      </div>
+    </section>
+
+    <!-- Main Workspace Layout -->
+    <main class="workspace-grid">
+      <!-- Left Column: Patient & Sensor Data Entry -->
+      <div class="form-container">
+        
+        <!-- Live Auto-Predict Bar -->
+        <div class="live-mode-bar">
+          <div class="live-mode-left">
+            <span class="live-indicator-dot"></span>
+            <span class="live-mode-title">Real-Time Reactive Assessment</span>
+            <span class="live-mode-desc">Predictions recalculate automatically as you adjust parameters.</span>
+          </div>
+          <div class="live-mode-right">
+            <label class="switch-small">
+              <input type="checkbox" id="live-predict-toggle" checked>
+              <span class="slider-small round"></span>
+            </label>
+            <span class="live-toggle-label">Auto-Predict</span>
+          </div>
+        </div>
+
+        <form id="prediction-form" onsubmit="event.preventDefault(); submitPrediction();">
+          
+          <!-- 1. Patient Demographics & BMI Section -->
+          <div class="card form-block">
+            <div class="block-header">
+              <div class="section-title">
+                <div class="icon-bubble cyan">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                    <circle cx="12" cy="7" r="4"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Patient Demographics & Clinical Profile</h3>
+                  <p class="section-subtitle">Baseline clinical indicators influencing biomechanical wear</p>
+                </div>
+              </div>
+              <button type="button" class="btn-bmi-toggle" onclick="toggleBMICalculator()">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="2" width="16" height="20" rx="2"/>
+                  <line x1="8" y1="6" x2="16" y2="6"/>
+                  <line x1="16" y1="14" x2="16" y2="18"/>
+                  <path d="M16 10h.01"/>
+                  <path d="M12 10h.01"/>
+                  <path d="M8 10h.01"/>
+                  <path d="M12 14h.01"/>
+                  <path d="M8 14h.01"/>
+                  <path d="M12 18h.01"/>
+                  <path d="M8 18h.01"/>
+                </svg>
+                <span>BMI Calculator</span>
+              </button>
+            </div>
+
+            <!-- Expandable BMI Calculator Box -->
+            <div class="bmi-calculator-drawer" id="bmi-calculator-drawer">
+              <div class="bmi-inner-box">
+                <div class="bmi-header-row">
+                  <h4>Interactive Body Mass Index (BMI) Calculator</h4>
+                  <div class="unit-selector">
+                    <button type="button" class="unit-tab active" id="unit-metric" onclick="setBMIUnit('metric')">Metric (cm / kg)</button>
+                    <button type="button" class="unit-tab" id="unit-imperial" onclick="setBMIUnit('imperial')">Imperial (in / lbs)</button>
+                  </div>
+                </div>
+
+                <div class="bmi-inputs-row">
+                  <div class="field" id="height-metric-group">
+                    <label for="calc-height">Height (cm)</label>
+                    <input type="number" id="calc-height" min="100" max="230" step="0.5" value="172" oninput="calculateBMI()">
+                  </div>
+                  <div class="field" id="weight-metric-group">
+                    <label for="calc-weight">Weight (kg)</label>
+                    <input type="number" id="calc-weight" min="30" max="220" step="0.5" value="84" oninput="calculateBMI()">
+                  </div>
+                  <div class="field hide" id="height-imperial-group">
+                    <label for="calc-height-in">Height (inches)</label>
+                    <input type="number" id="calc-height-in" min="40" max="95" step="0.5" value="68" oninput="calculateBMI()">
+                  </div>
+                  <div class="field hide" id="weight-imperial-group">
+                    <label for="calc-weight-lbs">Weight (lbs)</label>
+                    <input type="number" id="calc-weight-lbs" min="65" max="500" step="1" value="185" oninput="calculateBMI()">
+                  </div>
+                </div>
+
+                <div class="bmi-result-bar">
+                  <div class="bmi-result-stat">
+                    <span>Calculated BMI:</span>
+                    <strong id="calc-bmi-output">28.4 kg/m²</strong>
+                    <span class="bmi-badge" id="calc-bmi-category">Overweight</span>
+                  </div>
+                  <div class="bmi-visual-meter">
+                    <div class="meter-bar">
+                      <div class="meter-marker" id="bmi-marker" style="left: 65%;"></div>
+                    </div>
+                    <div class="meter-scale-labels">
+                      <span>Underweight (&lt;18.5)</span>
+                      <span>Normal (18.5–24.9)</span>
+                      <span>Overweight (25–29.9)</span>
+                      <span>Obese (≥30)</span>
+                    </div>
+                  </div>
+                  <button type="button" class="btn-apply-bmi" onclick="applyCalculatedBMI()">
+                    Apply to Patient Record
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Standard Demographics Inputs -->
+            <div class="input-grid-3">
+              <div class="field">
+                <label for="age">
+                  Patient Age
+                  <span class="badge-hint">years</span>
+                </label>
+                <div class="number-stepper">
+                  <button type="button" class="step-btn" onclick="stepVal('age', -1)">&minus;</button>
+                  <input type="number" id="age" min="18" max="100" step="1" value="65" required onchange="handleInputChange()">
+                  <button type="button" class="step-btn" onclick="stepVal('age', 1)">&plus;</button>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="gender">Biological Sex</label>
+                <div class="gender-toggle-group">
+                  <label class="gender-radio">
+                    <input type="radio" name="gender-rad" value="1" checked onchange="setGender(1)">
+                    <span class="gender-pill">Male</span>
+                  </label>
+                  <label class="gender-radio">
+                    <input type="radio" name="gender-rad" value="0" onchange="setGender(0)">
+                    <span class="gender-pill">Female</span>
+                  </label>
+                </div>
+                <input type="hidden" id="gender" value="1">
+              </div>
+
+              <div class="field">
+                <label for="bmi">
+                  Body Mass Index (BMI)
+                  <span class="badge-hint" id="bmi-status-pill">Overweight</span>
+                </label>
+                <div class="number-stepper">
+                  <button type="button" class="step-btn" onclick="stepVal('bmi', -0.5)">&minus;</button>
+                  <input type="number" id="bmi" min="15" max="50" step="0.1" value="28.4" required onchange="handleInputChange()">
+                  <button type="button" class="step-btn" onclick="stepVal('bmi', 0.5)">&plus;</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. IMU Kinematics Modality Card -->
+          <div class="card form-block modality-card" id="imu-card">
+            <div class="block-header">
+              <div class="section-title">
+                <div class="icon-bubble blue">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>IMU Gait Kinematics</h3>
+                  <p class="section-subtitle">Spatio-temporal parameters, gait rhythm & bilateral symmetry</p>
+                </div>
+              </div>
+
+              <!-- Modality Connection Toggle -->
+              <div class="modality-switch-wrap">
+                <span class="toggle-status" id="imu-status-text">Sensor Connected</span>
+                <label class="switch">
+                  <input type="checkbox" id="toggle-has-imu" checked onchange="toggleModality('imu')">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="modality-content" id="imu-inputs">
+              <!-- Quality Slider -->
+              <div class="quality-control-row">
+                <div class="quality-info">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                  </svg>
+                  <span>Sensor Signal Integrity:</span>
+                  <strong id="imu-q-val">100% (High Quality)</strong>
+                </div>
+                <div class="quality-slider-wrap">
+                  <input type="range" id="imu_quality" min="0.1" max="1.0" step="0.05" value="1.0" oninput="updateQualityText('imu'); handleInputChange();">
+                </div>
+              </div>
+
+              <!-- Primary Gait Parameters -->
+              <div class="input-grid-3">
+                <div class="field">
+                  <div class="field-label-row">
+                    <label for="imu_cadence">Cadence</label>
+                    <span class="norm-badge">Normal: 105–120</span>
+                  </div>
+                  <div class="input-with-unit">
+                    <input type="number" id="imu_cadence" step="0.5" value="98.5" onchange="handleInputChange()">
+                    <span class="unit-tag">steps/min</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="field-label-row">
+                    <label for="imu_stride_time">Stride Time</label>
+                    <span class="norm-badge">Normal: 1.05–1.18</span>
+                  </div>
+                  <div class="input-with-unit">
+                    <input type="number" id="imu_stride_time" step="0.01" value="1.22" onchange="handleInputChange()">
+                    <span class="unit-tag">sec</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="field-label-row">
+                    <label for="imu_gait_speed">Gait Velocity</label>
+                    <span class="norm-badge">Normal: 1.2–1.4</span>
+                  </div>
+                  <div class="input-with-unit">
+                    <input type="number" id="imu_gait_speed" step="0.01" value="1.12" onchange="handleInputChange()">
+                    <span class="unit-tag">m/s</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Asymmetry & Dynamic Control -->
+              <div class="input-grid-3">
+                <div class="field">
+                  <div class="field-label-row">
+                    <label for="imu_stride_asymmetry">Stride Asymmetry</label>
+                    <span class="norm-badge danger">&lt; 0.05 normal</span>
+                  </div>
+                  <div class="input-with-unit">
+                    <input type="number" id="imu_stride_asymmetry" step="0.005" value="0.085" onchange="handleInputChange()">
+                    <span class="unit-tag">ratio</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="field-label-row">
+                    <label for="imu_stride_time_variability">Stride Variability</label>
+                    <span class="norm-badge">&lt; 0.04 normal</span>
+                  </div>
+                  <div class="input-with-unit">
+                    <input type="number" id="imu_stride_time_variability" step="0.005" value="0.055" onchange="handleInputChange()">
+                    <span class="unit-tag">ratio</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="field-label-row">
+                    <label for="imu_stance_phase_asymmetry">Stance Asymmetry</label>
+                    <span class="norm-badge danger">&lt; 0.06 normal</span>
+                  </div>
+                  <div class="input-with-unit">
+                    <input type="number" id="imu_stance_phase_asymmetry" step="0.005" value="0.092" onchange="handleInputChange()">
+                    <span class="unit-tag">ratio</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Inertial Acceleration & Rotation -->
+              <div class="input-grid-2">
+                <div class="field">
+                  <div class="field-label-row">
+                    <label for="imu_acceleration_rms">Acceleration RMS</label>
+                    <span class="norm-badge">Impact magnitude</span>
+                  </div>
+                  <div class="input-with-unit">
+                    <input type="number" id="imu_acceleration_rms" step="0.05" value="10.15" onchange="handleInputChange()">
+                    <span class="unit-tag">m/s²</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="field-label-row">
+                    <label for="imu_angular_velocity_mean">Angular Velocity Mean</label>
+                    <span class="norm-badge">Foot sagittal sweep</span>
+                  </div>
+                  <div class="input-with-unit">
+                    <input type="number" id="imu_angular_velocity_mean" step="0.02" value="0.48" onchange="handleInputChange()">
+                    <span class="unit-tag">rad/s</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. sEMG Neuromuscular Modality Card -->
+          <div class="card form-block modality-card" id="semg-card">
+            <div class="block-header">
+              <div class="section-title">
+                <div class="icon-bubble purple">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 12h5l3 8 4-16 3 8h5"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>sEMG Neuromuscular Signals</h3>
+                  <p class="section-subtitle">Quadriceps co-activation, vastus balance & frequency fatigue</p>
+                </div>
+              </div>
+
+              <!-- Modality Connection Toggle -->
+              <div class="modality-switch-wrap">
+                <span class="toggle-status" id="semg-status-text">Sensor Connected</span>
+                <label class="switch">
+                  <input type="checkbox" id="toggle-has-semg" checked onchange="toggleModality('semg')">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="modality-content" id="semg-inputs">
+              <!-- Quality Slider -->
+              <div class="quality-control-row">
+                <div class="quality-info">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 12h5l3 8 4-16 3 8h5"/>
+                  </svg>
+                  <span>sEMG Signal-to-Noise Ratio:</span>
+                  <strong id="semg-q-val">100% (High Quality)</strong>
+                </div>
+                <div class="quality-slider-wrap">
+                  <input type="range" id="semg_quality" min="0.1" max="1.0" step="0.05" value="1.0" oninput="updateQualityText('semg'); handleInputChange();">
+                </div>
+              </div>
+
+              <!-- Vastus Medialis & Lateralis Balance -->
+              <div class="input-grid-3">
+                <div class="field">
+                  <div class="field-label-row">
+                    <label for="semg_vm_rms">Vastus Medialis (VM) RMS</label>
+                    <span class="norm-badge">Medial quad</span>
+                  </div>
+                  <div class="input-with-unit">
+                    <input type="number" id="semg_vm_rms" step="0.5" value="18.5" onchange="handleInputChange()">
+                    <span class="unit-tag">&mu;V</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="field-label-row">
+                    <label for="semg_vl_rms">Vastus Lateralis (VL) RMS</label>
+                    <span class="norm-badge">Lateral quad</span>
+                  </div>
+                  <div class="input-with-unit">
+                    <input type="number" id="semg_vl_rms" step="0.5" value="26.0" onchange="handleInputChange()">
+                    <span class="unit-tag">&mu;V</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="field-label-row">
+                    <label for="semg_vm_vl_rms_ratio">VM / VL Ratio</label>
+                    <span class="norm-badge danger">Normal: 0.95–1.15</span>
+                  </div>
+                  <div class="input-with-unit">
+                    <input type="number" id="semg_vm_vl_rms_ratio" step="0.02" value="0.71" onchange="handleInputChange()">
+                    <span class="unit-tag">ratio</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Spectral Median Frequencies & Co-Contraction -->
+              <div class="input-grid-3">
+                <div class="field">
+                  <div class="field-label-row">
+                    <label for="semg_vm_median_frequency">VM Median Frequency</label>
+                    <span class="norm-badge">Fatigue &lt; 60</span>
+                  </div>
+                  <div class="input-with-unit">
+                    <input type="number" id="semg_vm_median_frequency" step="0.5" value="52.0" onchange="handleInputChange()">
+                    <span class="unit-tag">Hz</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="field-label-row">
+                    <label for="semg_vl_median_frequency">VL Median Frequency</label>
+                    <span class="norm-badge">Normal: 65–75</span>
+                  </div>
+                  <div class="input-with-unit">
+                    <input type="number" id="semg_vl_median_frequency" step="0.5" value="66.5" onchange="handleInputChange()">
+                    <span class="unit-tag">Hz</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="field-label-row">
+                    <label for="semg_hq_ratio">H:Q Co-Contraction</label>
+                    <span class="norm-badge">Hamstrings/Quads</span>
+                  </div>
+                  <div class="input-with-unit">
+                    <input type="number" id="semg_hq_ratio" step="0.01" value="0.48" onchange="handleInputChange()">
+                    <span class="unit-tag">ratio</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Secondary Antagonist & Synergist Muscles -->
+              <div class="input-grid-2">
+                <div class="field">
+                  <div class="field-label-row">
+                    <label for="semg_rf_rms">Rectus Femoris (RF) RMS</label>
+                    <span class="norm-badge">Anterior thigh</span>
+                  </div>
+                  <div class="input-with-unit">
+                    <input type="number" id="semg_rf_rms" step="0.5" value="16.0" onchange="handleInputChange()">
+                    <span class="unit-tag">&mu;V</span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="field-label-row">
+                    <label for="semg_bf_rms">Biceps Femoris (BF) RMS</label>
+                    <span class="norm-badge">Posterior hamstring</span>
+                  </div>
+                  <div class="input-with-unit">
+                    <input type="number" id="semg_bf_rms" step="0.5" value="21.5" onchange="handleInputChange()">
+                    <span class="unit-tag">&mu;V</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Action Bar -->
+          <div class="action-submit-bar">
+            <button type="submit" id="btn-predict" class="btn-predict">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              <span>Run Multimodal AI Assessment</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Right Column: Live Clinical Assessment Card -->
+      <aside class="results-column">
+        <div class="card results-panel" id="results-panel">
+          <div class="panel-header">
+            <div>
+              <h2>Diagnostic Assessment</h2>
+              <span class="timestamp" id="prediction-time">Initializing AI model...</span>
+            </div>
+            <button type="button" class="btn-copy-report" onclick="copyDiagnosticReport()" title="Copy Clinical Summary to Clipboard">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+              </svg>
+              <span id="copy-btn-text">Copy Summary</span>
+            </button>
+          </div>
+
+          <!-- Circular SVG Radial Gauge -->
+          <div class="gauge-container">
+            <svg class="radial-gauge" viewBox="0 0 220 220">
+              <circle class="gauge-bg" cx="110" cy="110" r="90"/>
+              <circle class="gauge-progress" id="gauge-bar" cx="110" cy="110" r="90"/>
+            </svg>
+            <div class="gauge-inner">
+              <div class="risk-percentage" id="risk-pct">--%</div>
+              <div class="risk-sub">Estimated KOA Risk</div>
+            </div>
+          </div>
+
+          <!-- Risk Level Status Badge -->
+          <div class="risk-status-badge" id="risk-badge">
+            <div class="status-icon" id="status-icon"></div>
+            <span id="risk-title">Evaluating Patient Data...</span>
+          </div>
+
+          <!-- Key Diagnostic Metrics Grid -->
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <span class="m-label">Diagnostic Category</span>
+              <span class="m-val" id="metric-class">--</span>
+            </div>
+            <div class="metric-card">
+              <span class="m-label">Model Confidence</span>
+              <span class="m-val" id="metric-conf">--</span>
+            </div>
+            <div class="metric-card">
+              <span class="m-label">Sensors Utilized</span>
+              <span class="m-val" id="metric-mods">IMU + sEMG</span>
+            </div>
+            <div class="metric-card">
+              <span class="m-label">Model Latency</span>
+              <span class="m-val" id="metric-latency">-- ms</span>
+            </div>
+          </div>
+
+          <!-- Biomarkers Impact Breakdown -->
+          <div class="biomarkers-container">
+            <div class="biomarker-header-row">
+              <h3>Physiological Driver Breakdown</h3>
+              <span class="biomarker-count-badge" id="biomarker-count">0 factors</span>
+            </div>
+            <div class="biomarkers-list" id="biomarkers-list">
+              <div class="empty-state">Adjust values on the left or click a preset to see specific biomarkers.</div>
+            </div>
+          </div>
+
+          <!-- Clinical Action Recommendation -->
+          <div class="recommendation-card" id="recommendation-box">
+            <div class="rec-title-row">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="16" x2="12" y2="12"/>
+                <line x1="12" y1="8" x2="12.01" y2="8"/>
+              </svg>
+              <h4>Clinical Decision Recommendation</h4>
+            </div>
+            <p id="rec-text">Awaiting data evaluation.</p>
+          </div>
+
+          <!-- Technical Pipeline Footnote -->
+          <div class="clinical-note">
+            <strong>Pipeline Validation:</strong>
+            <span>Evaluated against real clinical patient holdouts. Features normalized dynamically with median imputation for disconnected sensors.</span>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
